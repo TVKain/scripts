@@ -6,7 +6,7 @@ CENTRAL_IP=$1
 ENCAP_IP=$2 
 GATEWAY=$3 
 
-if [ $GATEWAY == "gateway" ]; then 
+if [ $GATEWAY = "gateway" ]; then 
     ovs-vsctl set open . external-ids:ovn-cms-options=enable-chassis-as-gw
 fi
 
